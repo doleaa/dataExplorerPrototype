@@ -5,12 +5,9 @@ import {Col, Container, Row} from 'react-bootstrap';
 import {useSelector} from "react-redux";
 import {TestStateInterface} from "../../redux/test";
 import {OverallStateInterface} from "../../redux/store";
+import {COLUMN_SIZES} from "../utils/sizes";
 
 function App() {
-  const threeOnARowSize: number = 4;
-  const twoOnARowSize: number = 6;
-  const oneOnARowSize: number = 12;
-
   const testState = useSelector((state: OverallStateInterface): TestStateInterface => state.test);
 
   return (
@@ -21,31 +18,31 @@ function App() {
       <body>
         <Container>
           <Row>
-            <Col xs={oneOnARowSize} sm={oneOnARowSize} md={oneOnARowSize}>
+            <Col xs={COLUMN_SIZES.ONE_ON_A_ROW} sm={COLUMN_SIZES.ONE_ON_A_ROW} md={COLUMN_SIZES.ONE_ON_A_ROW}>
               <img src={logo} className="App-logo" alt="logo" />
             </Col>
           </Row>
           <Row>
-            <Col xs={twoOnARowSize} sm={twoOnARowSize} md={twoOnARowSize}>
+            <Col xs={COLUMN_SIZES.TWO_ON_A_ROW} sm={COLUMN_SIZES.TWO_ON_A_ROW} md={COLUMN_SIZES.TWO_ON_A_ROW}>
               <img src={logo} className="App-logo" alt="logo" />
             </Col>
-            <Col xs={twoOnARowSize} sm={twoOnARowSize} md={twoOnARowSize}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={threeOnARowSize} sm={threeOnARowSize} md={threeOnARowSize}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col xs={threeOnARowSize} sm={threeOnARowSize} md={threeOnARowSize}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col xs={threeOnARowSize} sm={threeOnARowSize} md={threeOnARowSize}>
+            <Col xs={COLUMN_SIZES.TWO_ON_A_ROW} sm={COLUMN_SIZES.TWO_ON_A_ROW} md={COLUMN_SIZES.TWO_ON_A_ROW}>
               <img src={logo} className="App-logo" alt="logo" />
             </Col>
           </Row>
           <Row>
-            <Col xs={oneOnARowSize} sm={oneOnARowSize} md={oneOnARowSize}>
+            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Col>
+            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Col>
+            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={COLUMN_SIZES.ONE_ON_A_ROW} sm={COLUMN_SIZES.ONE_ON_A_ROW} md={COLUMN_SIZES.ONE_ON_A_ROW}>
               <div>{testState.testString}</div>
             </Col>
           </Row>
