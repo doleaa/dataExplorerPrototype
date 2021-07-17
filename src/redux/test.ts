@@ -9,11 +9,11 @@ export interface TestActionInterface {
     data: string
 }
 
-const defaultInitialState: TestStateInterface = {
+export const testDefaultInitialState: TestStateInterface = {
     testString: "DEFAULT INITIAL VALUE"
 };
 
-const testReducer = (state: TestStateInterface = defaultInitialState, action: TestActionInterface): TestStateInterface => {
+const testReducer = (state: TestStateInterface = testDefaultInitialState, action: TestActionInterface): TestStateInterface => {
     switch (action.type) {
         case "SET_TEST_STRING":
             if (action.data !== undefined) {
