@@ -1,0 +1,20 @@
+.tableTitle {
+    font-size: x-large;
+    color: #7CAFDE;
+}
+
+.namedColumnsDataRow:hover {
+    border:1px solid #7CAFDE;
+}
+
+.red {
+    color: #D12F2F;
+}
+
+.yellow {
+    color: #FFD966;
+}
+
+.green {
+    color: #A8D08D;
+}

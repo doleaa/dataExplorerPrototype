@@ -29,34 +29,10 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <div>dfsafdsdjsfhldskfhdlskh</div>
+        <div>Welcome! :)</div>
       </header>
       <body>
         <Container>
-          <Row>
-            <Col xs={COLUMN_SIZES.ONE_ON_A_ROW} sm={COLUMN_SIZES.ONE_ON_A_ROW} md={COLUMN_SIZES.ONE_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={COLUMN_SIZES.TWO_ON_A_ROW} sm={COLUMN_SIZES.TWO_ON_A_ROW} md={COLUMN_SIZES.TWO_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col xs={COLUMN_SIZES.TWO_ON_A_ROW} sm={COLUMN_SIZES.TWO_ON_A_ROW} md={COLUMN_SIZES.TWO_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-            <Col xs={COLUMN_SIZES.THREE_ON_A_ROW} sm={COLUMN_SIZES.THREE_ON_A_ROW} md={COLUMN_SIZES.THREE_ON_A_ROW}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Col>
-          </Row>
           <Row>
             <Col xs={COLUMN_SIZES.ONE_ON_A_ROW} sm={COLUMN_SIZES.ONE_ON_A_ROW} md={COLUMN_SIZES.ONE_ON_A_ROW}>
               <div>{`${testState.testString} - CHANGED (${changesCounter}) TIMES`}</div>
