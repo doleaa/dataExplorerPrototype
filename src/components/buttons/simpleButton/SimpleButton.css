@@ -1,0 +1,16 @@
+.SimpleButton {
+    height: 50px;
+    padding-top:10px;
+    padding-bottom:10px ;
+    margin-bottom: 4px;
+    font-size:18px;
+    text-align: center;
+    /*background-color: #262626;*/
+    color: #7cafde;
+    border:1px solid #7CAFDE;
+    border-radius: 10px;
+}
+
+.SimpleButton:hover {
+    background-color: #005b72;
+}
